@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Boolzapp</title>
@@ -15,72 +18,129 @@
                 <div class="photo">
                     <img src="img/avatar_io.jpg" alt="user photo">
                 </div>
-                <div class="tools padding"></div>
+                <div class="tools padding">
+                    <ul>
+                        <li><i class="fa-solid fa-circle-notch mod"></i></li>
+                        <li><i class="fa-solid fa-message mod"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical mod"></i></li>
+                    </ul>
+                </div>
             </header>
             <section class="hero">
-                <div class="notifiche padding-l"></div>
-                <div class="search-bar padding-s"></div>
+                <div class="notifica padding-l">
+                    <i class="fa-solid fa-bell-slash mod circle"></i>
+                    <div class="tx-notifica padding-lft">
+                        <h2>Ricevi notifiche di nuovi messaggi</h2>
+                        <h3>Attiva notifiche desktop</h3>
+                    </div>
+                </div>
+                <div class="search-bar padding-s">
+                    <button class="src">
+                        <i class="fa-solid fa-magnifying-glass src"></i>
+                    </button>
+                <input type="text" class="search" placeholder="cerca o inizia una nuova chat">
+                </div>
             </section>
             <main class="side-chat">
                 <section class="row-prew padding-l">
                     <div class="photo">
                         <img src="img/avatar_1.jpg" alt="photo friend 1">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Michele</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">16:15</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_2.jpg" alt="photo friend 2">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Fabio</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">16:05</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_3.jpg" alt="photo friend 3">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Samuele</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">16:03</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_4.jpg" alt="photo friend 4">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Alessandro B.</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">15.50</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_5.jpg" alt="photo friend 5">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Alessandro L.</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">15:45</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_6.jpg" alt="photo friend 6">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Claudia</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">15.40</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_7.jpg" alt="photo friend 7">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Federico</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">15:30</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_8.jpg" alt="photo friend 8">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Gino</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">15:00</span>
+                    </div>
                 </section>
                 <section class="row-prew padding-l">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_2.jpg" alt="photo friend 9">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Manuele</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">12:00</span>
+                    </div>
                 </section>
-                <section class="row-prew padding-l">
+                <section class="row-prew padding">
                     <div class="photo">
-                        <img src="img/avatar_1.jpg" alt="photo friend 1">
+                        <img src="img/avatar_6.jpg" alt="photo friend 6">
                     </div>
-                    <div class="prew-chat"></div>
+                    <div class="prew-chat">
+                        <h2>Maria</h2>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <span class="ora">02:20</span>
+                    </div>
                 </section>
             </main>
         </section>
@@ -96,16 +156,6 @@
                 </div>
             </header>
             <main class="chat padding-xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad vero exercitationem, ex suscipit voluptatem minus voluptatibus asperiores aperiam maxime modi cum totam illo quis dolores esse ipsam architecto vel hic?
-            Laboriosam placeat, consequatur, at labore voluptas nemo, quibusdam veritatis pariatur sed saepe eligendi laborum impedit vel quas dignissimos cumque consequuntur! Earum iste nobis natus qui? Similique ipsam commodi veniam unde?
-            Voluptas officia dolores assumenda nulla id nostrum! Facere dolorem doloribus, eius quisquam adipisci deleniti quia veritatis fugiat inventore voluptate quaerat repellat? Deleniti aliquid maxime, eligendi repudiandae officiis enim quasi laudantium.
-            Placeat, amet officia sequi, accusamus natus neque ad animi at omnis dicta eveniet esse similique laboriosam repudiandae perspiciatis. At veritatis corporis porro optio suscipit, eos expedita. Consequuntur molestias corporis quasi.
-            Mollitia labore perferendis aliquid reprehenderit aut quasi! Dolor, magni ullam autem et id recusandae? A, minima excepturi voluptatum quam id ipsa rem praesentium laborum autem, nemo dolor beatae quis nihil?
-            Sapiente deserunt placeat est excepturi architecto nesciunt, reiciendis velit ad, vero laboriosam aut? Corrupti aliquid quaerat at nesciunt, rerum, magnam facere voluptas laboriosam iusto provident dicta ipsa accusamus, beatae ut!
-            Quas eius, provident repellendus itaque expedita dolorum aperiam ipsum facere facilis aliquam consequuntur incidunt neque tempore aspernatur quos eligendi dignissimos consequatur qui ea, delectus ex fuga voluptatum illo. Quae, ipsum.
-            Eius minus quasi eum ipsam reiciendis earum amet optio adipisci, iusto tempore obcaecati nostrum vitae eaque laboriosam fugit numquam! Commodi minima labore aliquid quaerat est quasi omnis numquam iure iste.
-            Iure aspernatur illo voluptate, ex vitae neque libero temporibus? Nulla vero ipsam eum perspiciatis asperiores, dolores sapiente molestias? Nam ab quae commodi ducimus veritatis qui voluptate reiciendis fuga nisi voluptas.
-            Quibusdam dolore fugiat consequatur tempora hic voluptatibus nisi eligendi quis adipisci quisquam, error excepturi odio quo animi repellat quam laboriosam ut. Illum voluptatum doloribus consequuntur asperiores, dolore vero illo provident.
             </main>
             <footer class="input-chat padding-s"></footer> 
         </section>

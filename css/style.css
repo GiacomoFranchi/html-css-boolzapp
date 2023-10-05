@@ -3,28 +3,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
+/*ROOT*/
+:root{
+    --w-side-bar: 400px;
+    --foto: 70px;
+    --h-row-sidebar: 70px;
+    --h-src-bar: 40px;
+    --w-side-bar-tabl: calc(var(--foto) + 2rem);
+}
 
 /*COMMON*/
 .padding{
-    padding: 1rem 1.5rem;
+    padding: 15px;
 }
 
 .padding-s{
-    padding: 0.5rem 1.5rem;
+    padding: 8px 15px;
 }
 
 .padding-l{
-    padding: 1.5rem;
+    padding: 15px;
 }
 
 .padding-xl{
-    padding: 3rem 5rem;
+    padding: 45px 75px;
 }
 
 .padding-lft{
-    padding-left: 1.5rem;
+    padding-left: 22px;
+}
+
+.mod{
+    font-size: 35px;
+    margin-left: 1.5rem;
+    color: rgb(177, 177, 177);
+}
+
+.circle{
+    background-color: white;
+    color: rgb(142, 218, 252) ;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.search{
+    width: 100%;
+    padding: 0.3rem;
+    border: none;
+    border-radius:0 5px 5px 0;
+}
+
+.src{
+    color: rgb(177, 177, 177);
+    background-color: white;
+    border: none;
+    padding:0 0.5rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.search:active{
+    border: none;
+}
+
+/*UL-LI*/
+ul{
+    display: flex;
+    list-style: none;
 }
 
 /*BACKGROUND*/
@@ -50,10 +98,9 @@ body{
 
 /*MAIN SCREEN*/
 .main-screen{
-    width: 80%;
+    width: 85%;
     height: calc(100% - 2rem);
     margin: auto;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
 }
@@ -61,8 +108,7 @@ body{
 /*SIDE_BAR*/
 .side-bar{
     height: 100%;
-    width: 250px;
-    background-color: yellow;
+    width: var(--w-side-bar);
 }
 
 .header-user{
@@ -74,8 +120,8 @@ body{
 }
 
 .photo{
-    width: 70px;
-    height: 70px;
+    width: var(--foto);
+    height:var(--foto);
 }
 
 .photo img{
@@ -86,44 +132,84 @@ body{
 }
 
 .tools{
-    width: calc(100% - 70px);
-    background-color: lightgreen;
+    width: calc(100% - var(--foto));
     display: flex;
-    justify-content: left;
+    justify-content: right;
 }
 
-.notifiche{
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.notifica{
     width: 100%;
-    height: 70px;
     background-color:rgb(142, 218, 252) ;
+    display: flex;
+    align-items: center;
+}
+
+.tx-notifica h2{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tx-notifica h3{
+    font-size: 1rem;
+    color:rgb(177, 177, 177);
+    text-decoration: underline;
+    font-weight: 400;
 }
 
 .search-bar{
     width: 100%;
-    height: 50px;
+    height: var(--h-src-bar);
     background-color: rgb(234, 234, 234) ;
+    display: flex;
 }
 
 .side-chat{
-    height: calc(100% - 190px - 2rem);
+    height: calc(100% - var(--h-row-sidebar) - var(--h-src-bar) - var(--foto) - 44px);
     width: 100%;
     overflow-y: auto;
-    background-color: brown;
+    background-color: white;
 }
 
 .row-prew{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 1px solid rgb(177, 177, 177);
 }
 
 .prew-chat{
-    width: calc(100% - 70px);
-    background-color: coral;
+    width: calc(100% - var(--foto));
     height: 70px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
+    position: relative;
+    padding-left: 15px;
+    
+    flex-direction: column;
+}
+
+.prew-chat h2{
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.prew-chat h3{
+    color: rgb(177, 177, 177);
+    font-size: 1rem;
+}
+
+.ora{
+    color: rgb(177, 177, 177);
+    position: absolute;
+    top: 10px;
+    right: 0;
 }
 
 @media screen and (max-width:991px) {
@@ -132,17 +218,17 @@ body{
         height: 100vh;
     }
     .side-bar{
-        width: 70px;
+        width: var(--w-side-bar-tabl);
         padding: 0;
     }
     .photo{
-        width: 70px;
+        width: var(--foto);
     }
     .tools, .prew-chat, .hero{
         display: none;
     }
     .side-chat{
-        height: calc(100% - 70px - 2rem);
+        height: calc(100% - var(--h-row-sidebar) - var(--h-src-bar) + 10px);
     }
 }
 
@@ -154,7 +240,7 @@ body{
 /*CHAT*/
 .chat-open{
     height: 100%;
-    width:calc(100% - 250px);
+    width:calc(100% - var(--w-side-bar));
     background-color: orange;
 }
 
@@ -181,7 +267,7 @@ body{
 .chat{
     width: 100%;
     background-image: url(../img/mine.jpg);
-    height: calc(100% - 140px - 2rem);
+    height: calc(100% - var(--foto) - var(--foto) - 2rem);
     overflow-y: auto;
 }
 
@@ -193,7 +279,7 @@ body{
 
 @media screen and (max-width:991px) {
     .chat-open{
-        width: calc(100% - 70px);
+        width: calc(100% - var(--w-side-bar-tabl));
     }
 }
 
