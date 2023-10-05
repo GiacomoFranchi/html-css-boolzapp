@@ -23,6 +23,10 @@
     padding: 3rem 5rem;
 }
 
+.padding-lft{
+    padding-left: 1.5rem;
+}
+
 /*BACKGROUND*/
 body{
     width: 100%;
@@ -57,7 +61,7 @@ body{
 /*SIDE_BAR*/
 .side-bar{
     height: 100%;
-    width: 35%;
+    width: 250px;
     background-color: yellow;
 }
 
@@ -70,10 +74,10 @@ body{
 }
 
 .photo{
-    width: 20%;
+    width: 70px;
     height: 70px;
-    background-color: green;
 }
+
 .photo img{
     width: 100%;
     height: 100%;
@@ -82,7 +86,7 @@ body{
 }
 
 .tools{
-    width: 80%;
+    width: calc(100% - 70px);
     background-color: lightgreen;
     display: flex;
     justify-content: left;
@@ -101,7 +105,7 @@ body{
 }
 
 .side-chat{
-    height: calc(100% - 222px);
+    height: calc(100% - 190px - 2rem);
     width: 100%;
     overflow-y: auto;
     background-color: brown;
@@ -114,7 +118,7 @@ body{
 }
 
 .prew-chat{
-    width: 80%;
+    width: calc(100% - 70px);
     background-color: coral;
     height: 70px;
     display: flex;
@@ -122,26 +126,27 @@ body{
     justify-content: space-between;
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:991px) {
     .main-screen{
         width: 100%;
         height: 100vh;
     }
     .side-bar{
-        width: 20%;
+        width: 70px;
+        padding: 0;
     }
     .photo{
-        width: 100%;
+        width: 70px;
     }
     .tools, .prew-chat, .hero{
         display: none;
     }
     .side-chat{
-        height: calc(100% - 102px);
+        height: calc(100% - 70px - 2rem);
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .side-bar{
         display: none;
     }    
@@ -149,20 +154,34 @@ body{
 /*CHAT*/
 .chat-open{
     height: 100%;
-    width:65%;
+    width:calc(100% - 250px);
     background-color: orange;
 }
 
 .header-chat{
     width: 100%;
-    height: 70px;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-chat-sx{
+    width:calc(100% - 300px);
+    height: 70px;
+    background-color: pink;
+}
+
+.header-chat-dx{
+    width: 300px;
+    height: 70px;
+    background-color: violet;
 }
 
 .chat{
     width: 100%;
     background-image: url(../img/mine.jpg);
-    height: calc(100% - 140px);
+    height: calc(100% - 140px - 2rem);
     overflow-y: auto;
 }
 
@@ -172,13 +191,13 @@ body{
     background-color: white;
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:991px) {
     .chat-open{
-        width: 80%;
+        width: calc(100% - 70px);
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .chat-open{
         width: 100%;
         height: 100vh;
