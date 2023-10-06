@@ -12,7 +12,7 @@
     --w-side-bar: 400px;
     --foto: 70px;
     --h-row-sidebar: 70px;
-    --h-src-bar: 40px;
+    --h-src-bar: 2.5rem;
     --w-side-bar-tabl: calc(var(--foto) + 2rem);
     /*COLORI*/
     --bg-color-gray: rgb(234, 234, 234);
@@ -23,27 +23,27 @@
 
 /*COMMON*/
 .padding{
-    padding: 15px;
+    padding: 1rem;
 }
 
 .padding-s{
-    padding: 8px 15px;
+    padding: 0.5rem 1rem;
 }
 
 .padding-l{
-    padding: 15px;
+    padding: 1rem;
 }
 
 .padding-xl{
-    padding: 45px 75px;
+    padding: 2.8rem 4.5rem;
 }
 
 .padding-lft{
-    padding-left: 22px;
+    padding-left: 1.4rem;
 }
 
 .mod{
-    font-size: 30px;
+    font-size: 1.8rem;
     margin-left: 1.5rem;
     color:var(--tx-color-gray)
 }
@@ -51,7 +51,7 @@
 .circle{
     background-color: white;
     color: var(--bg-color-lblue) ;
-    padding: 10px;
+    padding: 0.6rem;
     border-radius: 50%;
     margin: 0;
 }
@@ -246,7 +246,7 @@ body{
         display: none;
     }
     .side-chat{
-        height: calc(100% - var(--h-row-sidebar) - var(--h-src-bar) + 10px);
+        height: calc(100% - var(--h-row-sidebar) - 2rem);
     }
 }
 
@@ -348,9 +348,9 @@ body{
     transform: rotate(180deg);
 }
 
-.chevron:hover .box-chevron{
+.chevron:hover box-chevron{
     display: block;
-    z-index: 999;
+    order: 1;
 }
 
 /* MSG INVIATI*/
